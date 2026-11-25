@@ -108,6 +108,7 @@ export const projects: Project[] = [
       "Aplikasi web untuk memesan ruangan: melihat ketersediaan, membuat pemesanan, dan mengelola data ruangan. Frontend React + TypeScript terhubung ke REST API ASP.NET Core dengan Entity Framework Core.",
     stack: ["React", "TypeScript", "ASP.NET Core", "EF Core", "SQLite"],
     filters: [".NET", "React"],
+    image: "/projects/roombooking.png",
     links: [
       { label: "Frontend Repository", href: "https://github.com/Wicakzz/2026-roombooking-frontend" },
       { label: "Backend Repository", href: "https://github.com/Wicakzz/2026-roombooking-backend" },

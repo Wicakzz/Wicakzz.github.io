@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
 import { CloseIcon, MenuIcon } from "./Icons";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { id: "tentang", label: "Tentang" },
@@ -51,17 +52,21 @@ export default function Navbar() {
           >
             CV
           </a>
+          <ThemeToggle />
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="p-2 md:hidden"
-          aria-label={open ? "Tutup menu" : "Buka menu"}
-          aria-expanded={open}
-        >
-          {open ? <CloseIcon /> : <MenuIcon />}
-        </button>
+        <div className="flex items-center gap-1 md:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="p-2"
+            aria-label={open ? "Tutup menu" : "Buka menu"}
+            aria-expanded={open}
+          >
+            {open ? <CloseIcon /> : <MenuIcon />}
+          </button>
+        </div>
       </div>
 
       {open && (

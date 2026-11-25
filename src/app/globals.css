@@ -14,6 +14,19 @@
   --font-mono: var(--font-plex), ui-monospace, monospace;
 }
 
+/* Tema gelap: nilai token yang sama ditimpa, jadi semua komponen ikut berubah. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #121314;
+  --color-card: #1a1c1e;
+  --color-ink: #ecebe7;
+  --color-soft: #a9adb3;
+  --color-faint: #7d8188;
+  --color-rule: #2b2e32;
+  --color-moss: #63bf98;
+  --color-moss-soft: #1b2a23;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;

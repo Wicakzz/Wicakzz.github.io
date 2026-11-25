@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { profile } from "@/data/profile";
 import Reveal from "./Reveal";
+import ZoomableImage from "./ZoomableImage";
 
 export default function Hero() {
   return (
@@ -41,7 +41,14 @@ export default function Hero() {
           <figure className="rotate-[1.5deg] rounded-xl border border-rule bg-card p-3 shadow-[0_1px_0_#e3e1da,0_18px_40px_-28px_rgba(23,24,26,0.45)] transition-transform duration-300 hover:rotate-0">
             <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-moss-soft">
               {profile.photo ? (
-                <Image src={profile.photo} alt={`Foto ${profile.name}`} fill priority sizes="260px" className="object-cover" />
+                <ZoomableImage
+                  src={profile.photo}
+                  alt={`Foto ${profile.name}`}
+                  sizes="260px"
+                  priority
+                  className="object-cover"
+                  downloadName="Foto-Bagas-Wicaksono.png"
+                />
               ) : (
                 <div className="flex size-full items-center justify-center text-6xl font-extrabold text-moss/30">BW</div>
               )}

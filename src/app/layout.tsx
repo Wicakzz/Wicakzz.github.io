@@ -13,7 +13,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id">
+    <html lang="id" suppressHydrationWarning>
+      <head>
+        {/* Terapkan tema sebelum halaman tampil supaya tidak berkedip. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`,
+          }}
+        />
+      </head>
       <body className={`${jakarta.variable} ${plex.variable} antialiased`}>{children}</body>
     </html>
   );

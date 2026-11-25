@@ -1,19 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { projectFilters, projects, type Project } from "@/data/profile";
 import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
+import ZoomableImage from "./ZoomableImage";
 
 function Thumb({ p, index }: { p: Project; index: number }) {
   return (
     <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-rule bg-moss-soft">
       {p.image ? (
-        <Image
+        <ZoomableImage
           src={p.image}
           alt={`Tampilan ${p.title}`}
-          fill
           sizes="(min-width: 768px) 40vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
