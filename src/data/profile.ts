@@ -44,7 +44,7 @@ export const profile = {
   location: "Surabaya, Indonesia",
   email: "bagas16.bw@gmail.com",
   /** Path foto di folder /public, mis. "/profile.jpg". Kosongkan untuk memakai inisial. */
-  photo: "",
+  photo: "/profile.png",
   cv: "/cv.pdf",
   socials: {
     github: { label: "Wicakzz", href: "https://github.com/Wicakzz" },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     stack: ["ASP.NET Core", "C#", "PostgreSQL", "Docker", "Clean Architecture"],
     filters: [".NET"],
     note: "Backend Developer · Apr 2026 — sekarang",
-    links: [{ label: "Lihat di Play Store", href: "https://play.google.com/store/apps/details?id=com.warehaus&hl=id" }],
+    links: [{ label: "Lihat Website", href: "https://warehaus.web.app/" }],
   },
   {
     title: "Room Booking System",
