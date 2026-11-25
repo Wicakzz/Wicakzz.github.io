@@ -48,6 +48,7 @@ export default function Hero() {
                   priority
                   className="object-cover"
                   downloadName="Foto-Bagas-Wicaksono.png"
+                  size="sm"
                 />
               ) : (
                 <div className="flex size-full items-center justify-center text-6xl font-extrabold text-moss/30">BW</div>
