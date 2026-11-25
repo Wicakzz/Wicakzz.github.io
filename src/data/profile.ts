@@ -98,6 +98,7 @@ export const projects: Project[] = [
       "Sistem manajemen gudang di bawah PT Sindika yang sudah rilis di Google Play Store. Saya membangun arsitektur backend dan REST API inti (inventory, order, shipment), merancang database dengan Entity Framework Core dan PostgreSQL, serta menyiapkan lingkungan berbasis Docker.",
     stack: ["ASP.NET Core", "C#", "PostgreSQL", "Docker", "Clean Architecture"],
     filters: [".NET"],
+    image: "/projects/warehaus.png",
     note: "Backend Developer · Apr 2026 — sekarang",
     links: [{ label: "Lihat Website", href: "https://warehaus.web.app/" }],
   },
@@ -115,8 +116,8 @@ export const projects: Project[] = [
   {
     title: "App Pegawai",
     description:
-      "Aplikasi web pengelolaan data pegawai berbasis Laravel, dengan model Eloquent dan migrasi database untuk tabel pegawai.",
-    stack: ["Laravel", "PHP"],
+      "Aplikasi web pengelolaan data pegawai berbasis Laravel: menambah, melihat detail, mengubah, dan menghapus data pegawai (nama, kontak, alamat, tanggal masuk, status aktif) dengan tampilan Blade dan layout bersama.",
+    stack: ["Laravel", "PHP", "Eloquent", "Blade", "SQLite"],
     filters: ["Laravel"],
     note: "Repository privat",
   },
