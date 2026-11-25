@@ -17,5 +17,5 @@ Semua konten (profil, keahlian, project, riwayat, kontak) ada di `src/data/profi
 Gambar dan CV disimpan di folder `public/`:
 
 - `public/cv.pdf` untuk CV
-- `public/profile.jpg` untuk foto profil (isi `photo: "/profile.jpg"`)
-- `public/projects/*.png` untuk screenshot project (isi `image` di tiap project)
+- `public/profile.jpg` untuk foto profil 
+- `public/projects/*.png` untuk screenshot project 
