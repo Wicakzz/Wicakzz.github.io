@@ -14,7 +14,7 @@ function Thumb({ p, index }: { p: Project; index: number }) {
           src={p.image}
           alt={`Tampilan ${p.title}`}
           sizes="(min-width: 768px) 40vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          className={`object-cover ${p.imagePosition ?? "object-center"} transition-transform duration-500 group-hover:scale-[1.03]`}
         />
       ) : (
         <div className="flex size-full flex-col justify-between p-5">

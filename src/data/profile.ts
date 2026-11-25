@@ -12,6 +12,8 @@ export type Project = {
   filters: string[];
   /** Path gambar di folder /public, mis. "/projects/warehaus.png". Kosongkan jika belum ada. */
   image?: string;
+  /** Posisi potongan thumbnail, mis. "object-left-top". Default: tengah. */
+  imagePosition?: string;
   links?: { label: string; href: string }[];
   /** Catatan kecil di kartu, mis. "Repository privat". */
   note?: string;
@@ -117,9 +119,11 @@ export const projects: Project[] = [
   {
     title: "App Pegawai",
     description:
-      "Aplikasi web pengelolaan data pegawai berbasis Laravel: menambah, melihat detail, mengubah, dan menghapus data pegawai (nama, kontak, alamat, tanggal masuk, status aktif) dengan tampilan Blade dan layout bersama.",
+      "Aplikasi web pengelolaan data pegawai berbasis Laravel: dashboard statistik kepegawaian, pencarian dan filter per status atau departemen, export data ke CSV, serta tambah, lihat detail, ubah, dan hapus data pegawai.",
     stack: ["Laravel", "PHP", "Eloquent", "Blade", "SQLite"],
     filters: ["Laravel"],
+    image: "/projects/apppegawai.png",
+    imagePosition: "object-left-top",
     note: "Repository privat",
   },
 ];
